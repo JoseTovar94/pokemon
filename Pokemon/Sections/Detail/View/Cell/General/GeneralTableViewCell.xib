@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GeneralTableViewCell" rowHeight="160" id="ojT-Lt-hWW" customClass="GeneralTableViewCell" customModule="Pokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ojT-Lt-hWW" id="ffG-Te-kG9">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-vQ-6jb">
+                        <rect key="frame" x="10" y="10" width="457" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYL-Um-LeC">
+                                <rect key="frame" x="20" y="10" width="48.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSN-rE-t5N">
+                                <rect key="frame" x="20" y="38" width="19" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdI-Hh-Ndv">
+                                <rect key="frame" x="20" y="66" width="52.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jx-me-UcI">
+                                <rect key="frame" x="20" y="94" width="50" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-pi-aoh">
+                                <rect key="frame" x="20" y="122" width="80.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AYL-Um-LeC" firstAttribute="top" secondItem="x6x-vQ-6jb" secondAttribute="top" constant="10" id="1m7-3Y-0YY"/>
+                            <constraint firstItem="3jx-me-UcI" firstAttribute="leading" secondItem="AYL-Um-LeC" secondAttribute="leading" id="2kI-7Z-2RB"/>
+                            <constraint firstItem="uQ3-pi-aoh" firstAttribute="leading" secondItem="AYL-Um-LeC" secondAttribute="leading" id="2tS-AT-0gh"/>
+                            <constraint firstItem="uQ3-pi-aoh" firstAttribute="top" secondItem="3jx-me-UcI" secondAttribute="bottom" constant="10" id="8ah-Zi-ATj"/>
+                            <constraint firstItem="3jx-me-UcI" firstAttribute="top" secondItem="EdI-Hh-Ndv" secondAttribute="bottom" constant="10" id="ORL-P6-qT5"/>
+                            <constraint firstItem="AYL-Um-LeC" firstAttribute="leading" secondItem="x6x-vQ-6jb" secondAttribute="leading" constant="20" id="QFY-Mz-iYC"/>
+                            <constraint firstItem="EdI-Hh-Ndv" firstAttribute="top" secondItem="KSN-rE-t5N" secondAttribute="bottom" constant="10" id="R4G-Bm-wr1"/>
+                            <constraint firstItem="KSN-rE-t5N" firstAttribute="top" secondItem="AYL-Um-LeC" secondAttribute="bottom" constant="10" id="VCh-nj-0Uw"/>
+                            <constraint firstItem="KSN-rE-t5N" firstAttribute="leading" secondItem="AYL-Um-LeC" secondAttribute="leading" id="Wfl-g7-00d"/>
+                            <constraint firstAttribute="bottom" secondItem="uQ3-pi-aoh" secondAttribute="bottom" constant="10" id="hBC-qq-syN"/>
+                            <constraint firstItem="EdI-Hh-Ndv" firstAttribute="leading" secondItem="AYL-Um-LeC" secondAttribute="leading" id="zYd-zZ-1dY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x6x-vQ-6jb" firstAttribute="leading" secondItem="ffG-Te-kG9" secondAttribute="leading" constant="10" id="9Je-bQ-T8d"/>
+                    <constraint firstAttribute="trailing" secondItem="x6x-vQ-6jb" secondAttribute="trailing" constant="10" id="LpG-C5-5x3"/>
+                    <constraint firstItem="x6x-vQ-6jb" firstAttribute="top" secondItem="ffG-Te-kG9" secondAttribute="top" constant="10" id="vJg-dM-g3I"/>
+                    <constraint firstAttribute="bottom" secondItem="x6x-vQ-6jb" secondAttribute="bottom" constant="10" id="zyE-h0-Dxt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ExperienceLabel" destination="uQ3-pi-aoh" id="tRY-pJ-web"/>
+                <outlet property="HeightLabel" destination="3jx-me-UcI" id="oPs-mY-fzO"/>
+                <outlet property="idLabel" destination="KSN-rE-t5N" id="THF-wO-lO5"/>
+                <outlet property="nameLabel" destination="AYL-Um-LeC" id="9Od-uR-aun"/>
+                <outlet property="viewContainer" destination="x6x-vQ-6jb" id="rOe-5k-gWg"/>
+                <outlet property="weightLabel" destination="EdI-Hh-Ndv" id="eIX-Vq-7Fb"/>
+            </connections>
+            <point key="canvasLocation" x="-18.115942028985508" y="-7.3660714285714279"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="pokemonTextOnSurface">
+            <color red="0.0" green="0.23100000619888306" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

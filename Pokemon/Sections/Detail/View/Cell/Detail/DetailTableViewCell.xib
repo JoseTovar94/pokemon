@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" rowHeight="102" id="Xiy-F9-55k" customClass="DetailTableViewCell" customModule="Pokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xiy-F9-55k" id="92z-4z-0Mh">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-zs-rZc">
+                        <rect key="frame" x="10" y="10" width="457" height="92"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ability name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me3-Je-Jph">
+                                <rect key="frame" x="20" y="10" width="92.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is hidden:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxM-97-Rq1">
+                                <rect key="frame" x="20" y="38" width="66.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slot:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XH-HI-R10">
+                                <rect key="frame" x="20" y="66" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="pokemonTextOnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1XH-HI-R10" firstAttribute="leading" secondItem="me3-Je-Jph" secondAttribute="leading" id="5aH-QI-ZGT"/>
+                            <constraint firstItem="me3-Je-Jph" firstAttribute="top" secondItem="nnN-zs-rZc" secondAttribute="top" constant="10" id="8vJ-KI-g14"/>
+                            <constraint firstItem="FxM-97-Rq1" firstAttribute="leading" secondItem="me3-Je-Jph" secondAttribute="leading" id="Dma-xV-bDB"/>
+                            <constraint firstItem="me3-Je-Jph" firstAttribute="leading" secondItem="nnN-zs-rZc" secondAttribute="leading" constant="20" id="FgJ-63-20H"/>
+                            <constraint firstItem="FxM-97-Rq1" firstAttribute="top" secondItem="me3-Je-Jph" secondAttribute="bottom" constant="10" id="Lgk-8f-wq2"/>
+                            <constraint firstItem="1XH-HI-R10" firstAttribute="top" secondItem="FxM-97-Rq1" secondAttribute="bottom" constant="10" id="eBI-cE-NBj"/>
+                            <constraint firstAttribute="bottom" secondItem="1XH-HI-R10" secondAttribute="bottom" constant="8" id="vQJ-PQ-Szf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nnN-zs-rZc" firstAttribute="top" secondItem="92z-4z-0Mh" secondAttribute="top" constant="10" id="OxP-Iz-wf3"/>
+                    <constraint firstAttribute="bottom" secondItem="nnN-zs-rZc" secondAttribute="bottom" constant="10" id="ZSs-u6-zV2"/>
+                    <constraint firstItem="nnN-zs-rZc" firstAttribute="leading" secondItem="92z-4z-0Mh" secondAttribute="leading" constant="10" id="iAg-v4-B5k"/>
+                    <constraint firstAttribute="trailing" secondItem="nnN-zs-rZc" secondAttribute="trailing" constant="10" id="mzT-ci-Gut"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="nnN-zs-rZc" id="1Iu-jL-qJ6"/>
+                <outlet property="hiddenLabel" destination="FxM-97-Rq1" id="FXV-79-ppF"/>
+                <outlet property="nameLabel" destination="me3-Je-Jph" id="zoy-NW-CB3"/>
+                <outlet property="slotLabel" destination="1XH-HI-R10" id="h1V-Vq-occ"/>
+            </connections>
+            <point key="canvasLocation" x="-18.115942028985508" y="-26.785714285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="pokemonTextOnSurface">
+            <color red="0.0" green="0.23100000619888306" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

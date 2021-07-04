@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FavoritesViewModelController.readImage():FavoritesViewModelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel?.image">
+            </PersistentString>
+            <PersistentString
+               value = "self.viewModel?.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewModelController.loadMoreResults(success:):HomeViewModelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalPages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewModelController.loadMoreResults():HomeViewModelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalPages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FavoritesTableViewCell.setup(url:):FavoritesTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DetailViewModelController.loadResult(textSearch:):DetailViewModelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewModelT.cells">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LikeViewModelController.loadResult():LikeViewModelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " self.viewModel?.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomeViewModelController.loadResult(textSearch:):HomeViewModelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultsT">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailViewModelController.loadAbilitiesViewModel(_:):DetailViewModelController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LikeViewController.kolodaDidRunOutOfCards(_:):LikeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LikeViewController.reloadUI():LikeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "modelController.viewModel?.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

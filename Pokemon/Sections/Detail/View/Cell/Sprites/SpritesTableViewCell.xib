@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="SpritesTableViewCell" customModule="Pokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="261"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7Gw-MW-kW6">
+                        <rect key="frame" x="0.0" y="25.5" width="368" height="182.5"/>
+                        <color key="backgroundColor" name="walletSurface"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7Gw-MW-kW6" secondAttribute="height" multiplier="367:182" id="2pq-TH-BFV"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ies-nP-9eA">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="J8A-36-1NN">
+                        <rect key="frame" x="123" y="213" width="122" height="37"/>
+                        <color key="pageIndicatorTintColor" name="walletSecondary-alpha-30"/>
+                        <color key="currentPageIndicatorTintColor" name="walletSecondary"/>
+                    </pageControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sprites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdU-Ee-ra6">
+                        <rect key="frame" x="22" y="11" width="324" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" name="pokemonSecondary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="walletSurface"/>
+                <constraints>
+                    <constraint firstItem="J8A-36-1NN" firstAttribute="top" secondItem="7Gw-MW-kW6" secondAttribute="bottom" constant="5" id="JFU-s2-UQI"/>
+                    <constraint firstItem="XdU-Ee-ra6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="LNK-2C-wCR"/>
+                    <constraint firstAttribute="trailing" secondItem="7Gw-MW-kW6" secondAttribute="trailing" id="LgT-CI-QQo"/>
+                    <constraint firstItem="J8A-36-1NN" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="QPB-9a-nX4"/>
+                    <constraint firstItem="XdU-Ee-ra6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="cKp-7o-kDH"/>
+                    <constraint firstAttribute="trailing" secondItem="XdU-Ee-ra6" secondAttribute="trailing" constant="22" id="eDr-Ee-JAc"/>
+                    <constraint firstItem="7Gw-MW-kW6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fTz-to-aVp"/>
+                    <constraint firstItem="7Gw-MW-kW6" firstAttribute="top" secondItem="XdU-Ee-ra6" secondAttribute="bottom" constant="-5" id="mXH-1L-mAJ"/>
+                    <constraint firstItem="J8A-36-1NN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yFM-Gy-Nd3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="walletSurface"/>
+            <connections>
+                <outlet property="collectionView" destination="7Gw-MW-kW6" id="x6z-PR-EGr"/>
+                <outlet property="pageControl" destination="J8A-36-1NN" id="eM7-Vd-2rE"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="200.55803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="pokemonSecondary">
+            <color red="0.012000000104308128" green="0.85500001907348633" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="walletSecondary">
+            <color red="0.0" green="0.23100000619888306" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="walletSecondary-alpha-30">
+            <color red="0.0" green="0.23100000619888306" blue="0.28999999165534973" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="walletSurface">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
